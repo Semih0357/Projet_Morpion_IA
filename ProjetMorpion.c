@@ -1,6 +1,6 @@
 //*****************************************************************************************
 // PROJET DE STRUCTURE DE DONNEES
-// BASBUNAR Semih & BENTAARIT Nassim
+// BASBUNAR Semih
 //*****************************************************************************************
  
 #include <stdio.h>
@@ -20,7 +20,7 @@ typedef struct _grille
  {
      uint32_t score;
      uint32_t cases[9];
-     int32_t nb_bille;				// Structure de nos grilles
+     int32_t nb_bille;				
      struct _grille *suivant;
      struct _grille *coup_suivant;
      uint8_t bille_joue;
@@ -28,19 +28,19 @@ typedef struct _grille
 
 typedef struct
  {
-     uint8_t taille;				// Structure de nos listes
+     uint8_t taille;				
      grille *tete;				
  } liste;
 
 typedef struct
  {
-     liste **tab;				// Structure de notre table de hachage 
+     liste **tab;				
      uint32_t taille;
  } tab_hachage;
 
 typedef struct
 {
-    uint8_t nbr_transformation;			// Structure de notre "cle" pour retrouve une grille dans le tableau d'hachage
+    uint8_t nbr_transformation;			
     uint32_t score_min_similaire;
 } cle;
 
